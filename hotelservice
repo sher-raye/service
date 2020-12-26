@@ -1,0 +1,54 @@
+/* having and issue doing this section of the programme seeking assisstance.
+Create a RoomServiceMeal class that inherits from both RestaurantMeal and HotelService.
+Whenever you create a RoomServiceMeal object, the constructor assigns the string "room service" to the name of
+ the service field, and $4.00 is assigned to the service fee inherited from HotelService. 
+ 
+ Include a RoomServiceMeal function that displays all of the fields in a RoomServiceMeal by calling display functions from the two parent 
+classes. Additionally, the display function should display the total of the meals plus the room service fee.  In a main()function, instantiate a 
+ RoomServiceMeal object that inherits from both classes.   */
+
+#include <iostream>
+ #include <string>
+ using namespace std;
+ 
+    class RestaurantMeal {  //class declared 
+    	
+    	private:
+    	string foodname;
+    	float foodprice;
+    	
+    	public:
+    		RestaurantMeal(string a, float b)  //parameterized constructor 
+    		{
+    		foodname=a;
+    		foodprice=b;
+        	}
+        };
+        	
+    class  HotelService{  //class declared 
+    	private:
+        string 	nameserivice;
+        float	servicefee;
+         int	roomnumber;
+        public: 
+        Hotelservice(string c, float d, int e)     //parameterized constructor
+        {
+        	nameservice=c;
+        	servicefee=d;
+        	roomnumber=e;
+		  }
+    	};                    
+   class RoomServiceMeal: public RestaurantMeal, public HotelService{  //this class inherits from the previous classes
+private:	
+
+
+public:
+	
+		
+};
+
+
+int main() 
+{
+	
+}
